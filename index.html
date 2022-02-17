@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-5xl text-center m-9 text-lime-500">Money Saver</h1>
+    </header>
+    <main>
+        <section class="xl:flex mx-60">
+            <div class="mr-32">
+                <img src="images/mohammadreza-alidoost-BLQb3i0L6Q4-unsplash.jpg" width="600px" alt="">
+            </div>
+            <div class="bg-gray-200 w-1/2 p-16 text-center">
+                <H1 class=" text-2xl font-bold mb-10">Income</H1>
+                <div class="flex justify-center items-center gap-x-4">
+                    <div>
+                        <h1 class="text-2xl">income:  </h1>
+                    </div>
+                    <div>
+                        <input id="income" class="h-10 bg-zinc-300" type="text">
+                    </div>
+                </div>
+                <H1 class=" text-2xl font-bold m-5">Expenses</H1>
+                <div class="flex justify-center items-center gap-x-4 mb-5">
+                    <div>
+                        <h1 class="text-2xl ml-6">Food:  </h1>
+                    </div>
+                    <div>
+                        <input id="food" class="h-10 bg-zinc-300" type="text">
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-x-4 mb-5">
+                    <div>
+                        <h1 class="text-2xl ml-8">Rent:  </h1>
+                    </div>
+                    <div>
+                        <input id="rent" class="h-10 bg-zinc-300" type="text">
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-x-4 mb-5">
+                    <div>
+                        <h1 class="text-2xl">Clothes:  </h1>
+                    </div>
+                    <div>
+                        <input id="clothes" class="h-10 bg-zinc-300" type="text">
+                    </div>
+                </div>
+                <button id="calculate" class="bg-lime-400 px-20 py-2 rounded">Calculate</button>
+                <h1 class="text-2xl font-bold m-4">Total Expenses: <span id="totalExpenses">00</span></h1>
+                <h1 class="text-2xl font-bold m-4">Balance: <span id="balance">00</span></h1>
+                <div class="flex justify-center items-center gap-x-4">
+                    <div>
+                        <h1 class="text-2xl">Save:  </h1>
+                    </div>
+                    <div>
+                        <input id="percentage" class="h-10 w-20 bg-zinc-300" type="text">
+                    </div>
+                    <p>%</p>
+                    <button id="save" class="bg-lime-400 px-10 py-2 rounded">Save</button>
+                </div>
+                <h1 class="text-2xl font-bold m-4">Saving Amount: <span id="savingAmount">00</span></h1>
+                <h1 class="text-2xl font-bold m-4">Remaining Balance: <span>2500</span></h1>
+            </div>
+        </section>
+    </main>
+    <script src="calculate.js"></script>
+</body>
+</html>
